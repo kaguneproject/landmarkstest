@@ -23,6 +23,8 @@ struct Landmark: Hashable, Codable, Identifiable{
     
     var isFavorite: Bool
     
+    var isFeatured: Bool
+    
     private var imageName: String
     
     var category: Category
