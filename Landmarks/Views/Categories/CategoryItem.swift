@@ -14,12 +14,14 @@ struct CategoryItem: View {
         VStack(alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/){
             landmark
                 .image
+                .renderingMode(.original)
                 .resizable()
                 .frame(width: 155, height: 155, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                 .cornerRadius(5)
             
             Text(landmark.name)
                 .font(.caption)
+                .foregroundColor(.primary)
         }
         .padding(.leading,15)
     }
